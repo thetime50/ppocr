@@ -23,8 +23,8 @@ def dirLayoutTableFun():
 
     from PIL import Image
 
-    font_path = 'doc/fonts/simfang.ttf' # PaddleOCR下提供字体包
-    image = Image.open(img_path).convert('RGB')
+    # font_path = 'doc/fonts/simfang.ttf' # PaddleOCR下提供字体包
+    font_path = '../PaddleOCRv3/doc/fonts/simfang.ttf' # linux    image = Image.open(img_path).convert('RGB')
     im_show = draw_structure_result(image, result,font_path=font_path)
     im_show = Image.fromarray(im_show)
     im_show.save( os.path.join(save_folder,imgFileName,'result.jpg'))
@@ -47,7 +47,9 @@ def layoutTableFun():
 
     from PIL import Image
 
-    font_path = 'doc/fonts/simfang.ttf' # PaddleOCR下提供字体包
+
+    # font_path = 'doc/fonts/simfang.ttf' # PaddleOCR下提供字体包
+    font_path = '../PaddleOCRv3/doc/fonts/simfang.ttf' # linux
     image = Image.open(img_path).convert('RGB')
     im_show = draw_structure_result(image, result,font_path=font_path)
     im_show = Image.fromarray(im_show)
@@ -73,7 +75,8 @@ def layoutFun():
         print(line)
 
     from PIL import Image
-    font_path = 'doc/fonts/simfang.ttf' # PaddleOCR下提供字体包
+    # font_path = 'doc/fonts/simfang.ttf' # PaddleOCR下提供字体包
+    font_path = '../PaddleOCRv3/doc/fonts/simfang.ttf' # linux
     image = Image.open(img_path).convert('RGB')
     im_show = draw_structure_result(image, result,font_path=font_path)
     im_show = Image.fromarray(im_show)
@@ -98,7 +101,8 @@ def tableFun():
         print(line)
         
     from PIL import Image
-    font_path = 'doc/fonts/simfang.ttf' # PaddleOCR下提供字体包
+    # font_path = 'doc/fonts/simfang.ttf' # PaddleOCR下提供字体包
+    font_path = '../PaddleOCRv3/doc/fonts/simfang.ttf' # linux
     image = Image.open(img_path).convert('RGB')
     im_show = draw_structure_result(image, result,font_path=font_path)
     im_show = Image.fromarray(im_show)
