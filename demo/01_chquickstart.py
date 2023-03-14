@@ -1,4 +1,7 @@
 # -*- coding: utf8 -*-
+
+# pp-ocrv2 paddle:latest-dev-cuda11.2-cudnn8.2-gcc82
+
 # https://code.gitlink.org.cn/maxjhandsome/PaddleOCR/src/branch/release/2.2/doc/doc_ch/whl.md
 # 中文readme -> 中文OCR模型快速使用 -> Paddleocr Package使用说明
 from paddleocr import PaddleOCR, draw_ocr
